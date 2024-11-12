@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product page showcasing details of the product including image, description, price, and an option to buy.">
+  <title>Product Page - MyShop</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the separate CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">MyShop</h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productpage.html">Products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search products..." aria-label="Search products" class="search-input">
+            <button type="button" class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="product-detail">
+    <div class="container">
+        <div class="product-card" id="product-1">
+          <img src="product1.jpg" alt="Product 1 Image">
+      </div>
+      <div class="product-info">
+        <h2>Product 1</h2>
+        <p class="product-description">
+          This is a great product that provides exceptional value. High quality, easy to use, and perfect for everyday use. Get yours now!
+        </p>
+        <p class="product-price">$20.00</p>
+        <button class="cta">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 MyShop. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="social-media">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Get references to the search input and product cards
+    const searchInput = document.querySelector('.search-input');
+    const productCards = document.querySelectorAll('.product-card');
+
+    // Add an event listener for the 'input' event to the search field
+    searchInput.addEventListener('input', function() {
+      // Get the current search query (case-insensitive)
+      const query = searchInput.value.toLowerCase();
+
+      // Loop through each product card and check if it matches the query
+      productCards.forEach(function(card) {
+        const productName = card.querySelector('h4') ? card.querySelector('h4').textContent.toLowerCase() : '';
+        // If the product name contains the query, display it; otherwise, hide it
+        if (productName.includes(query)) {
+          card.style.display = 'block'; // Show the product card
+        } else {
+          card.style.display = 'none'; // Hide the product card
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
