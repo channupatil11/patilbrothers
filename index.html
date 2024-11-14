@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shop the latest products at MyShop, your trusted online store. Find quality items and exclusive offers today.">
-  <title>MyShop</title>
+  <meta name="description" content="Shop the latest products at patilbrothers, your trusted online store. Find quality items and exclusive offers today.">
+  <title>Patil Brothers</title>
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpUTPatz09ltu3QIvn5gjpNGtQsJ-v0GB_YBeFI0TzPWpS9XFshUrMztdcsLFndeS0D_exfvzASzDOy1HpGhRj5ebs9JgcMInLDO-o0df64SpDuCmpHLYvQuIjWO_z0pxieFQ_DWylZPdQbRFooorOYEmFSRLMtOUTzQkO7LMNeoFGGEvfTLKZdK3FGyBP/s320/Untitled-1.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -35,24 +36,29 @@
 </header>
 
 <br>
-<button>CUSTOM PRODUCT</button>
-<br>
+<button class="custom-product-button" onclick="window.location.href='https://wa.me/9986291937?text=I%20would%20like%20to%20inquire%20about%20a%20custom%20product'">
+  CUSTOM PRODUCT
+</button>
 
+
+<br>
+<main>
 <div class="content">
   <section class="products">
-    <h3>Featured Products</h3>
+    <h2>Featured Products</h2>
+    <div class="product-container">
     <div class="product-card" id="product-1">
       <img src="https://www.shutterstock.com/shutterstock/photos/1757753519/display_1500/stock-photo-lord-ganesha-with-colorful-background-wallpaper-god-ganesha-poster-design-for-wallpaper-1757753519.jpg" alt="Product 1 Image">
       <h4>Product 1</h4>
       <p>$20.00</p>
-      <button class="cta" onclick="window.location.href='https://wa.me/1234567890?text=I%20would%20like%20to%20buy%20Product%201'">Buy Now</button>
+      <button class="cta" aria-label="Buy Product 1 now" onclick="window.location.href='https://wa.me/1234567890?text=I%20would%20like%20to%20buy%20Product%201'">Buy Now</button>
     </div>
     
     <div class="product-card" id="product-2">
       <img src="https://www.shutterstock.com/shutterstock/photos/1857132805/display_1500/stock-photo-durga-mata-with-colorful-background-digital-wall-poster-1857132805.jpg" alt="Product 2 Image">
       <h4>Product 2</h4>
       <p>$25.00</p>
-      <button class="cta" onclick="window.location.href='https://wa.me/1234567890?text=I%20would%20like%20to%20buy%20Product%202'">Buy Now</button>
+      <button class="cta" onclick="window.location.href='https://wa.me/1234567890?text=I%20would%20like%20to%20buy%20Product%203'">Buy Now</button>
     </div>
     
     <div class="product-card" id="product-3">
@@ -112,26 +118,27 @@
     </div>
 
     <!-- Add more products with similar changes as needed -->
-
+   </div>
   </section>
 </div>
-
+</main>
 <!-- Footer -->
 <footer>
   <div class="footer-container">
-    <p>&copy; 2024 MyShop. All rights reserved.</p>
+    <p>&copy; 2024 patil brothers. All rights reserved.</p>
     <div class="footer-links">
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
       <a href="#">Contact</a>
     </div>
     <div class="social-media">
-      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/p/Mc_creative_01-100063970238422/?_rdr" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/mc_creative_01/?hl=en" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>      
     </div>
   </div>
 </footer>
+
 
 <script>
   const searchInput = document.querySelector('.search-input');
@@ -145,6 +152,7 @@
         card.style.display = 'block';
       } else {
         card.style.display = 'none';
+        card.classList.add('hidden');
       }
     });
   });
