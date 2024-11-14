@@ -3,91 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Product page showcasing details of the product including image, description, price, and an option to buy.">
-  <title>Product Page - MyShop</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to the separate CSS file -->
+  <meta name="description" content="Shop the latest products at patilbrothers, your trusted online store. Find quality items and exclusive offers today.">
+  <title>Patil Brothers</title>
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpUTPatz09ltu3QIvn5gjpNGtQsJ-v0GB_YBeFI0TzPWpS9XFshUrMztdcsLFndeS0D_exfvzASzDOy1HpGhRj5ebs9JgcMInLDO-o0df64SpDuCmpHLYvQuIjWO_z0pxieFQ_DWylZPdQbRFooorOYEmFSRLMtOUTzQkO7LMNeoFGGEvfTLKZdK3FGyBP/s320/Untitled-1.png" type="image/x-icon">
+  <link rel="stylesheet" href="pgstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1 class="logo">MyShop</h1>
-      <nav aria-label="Main Navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="productpage.html">Products</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="search-container">
-            <input type="text" placeholder="Search products..." aria-label="Search products" class="search-input">
-            <button type="button" class="search-button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </nav>
+<!-- Header -->
+<header>
+  <div class="container">
+    <h1 class="logo">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpUTPatz09ltu3QIvn5gjpNGtQsJ-v0GB_YBeFI0TzPWpS9XFshUrMztdcsLFndeS0D_exfvzASzDOy1HpGhRj5ebs9JgcMInLDO-o0df64SpDuCmpHLYvQuIjWO_z0pxieFQ_DWylZPdQbRFooorOYEmFSRLMtOUTzQkO7LMNeoFGGEvfTLKZdK3FGyBP/s320/Untitled-1.png" alt="Patil Brothers Logo">
+    </h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Search Bar -->  
+    <div class="search-container">
+      <input type="text" placeholder="Search products..." aria-label="Search products" class="search-input">
+      <button type="button" class="search-button">
+        <i class="fas fa-search"></i>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- Product Section -->
-  <section class="product-detail">
-    <div class="container">
-        <div class="product-card" id="product-1">
-          <img src="product1.jpg" alt="Product 1 Image">
-      </div>
-      <div class="product-info">
-        <h2>Product 1</h2>
-        <p class="product-description">
-          This is a great product that provides exceptional value. High quality, easy to use, and perfect for everyday use. Get yours now!
-        </p>
-        <p class="product-price">$20.00</p>
-        <button class="cta">Add to Cart</button>
+<br>
+<button class="custom-product-button" onclick="window.location.href='https://wa.me/9986291937?text=I%20would%20like%20to%20inquire%20about%20a%20custom%20product'">
+  CUSTOM PRODUCT
+</button>
+
+<br>
+<main>
+<div class="content">
+  <!-- First Main Section -->
+  <section class="main-section" id="section-one">
+    <div class="section-content">
+      <img src="https://via.placeholder.com/600x400" alt="Image 1" class="section-image">
+      <div class="text-content">
+        <h2>TILES PRINT</h2>
+        <p>This is the description for the first section. It provides information about a particular topic or service.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <p>&copy; 2024 MyShop. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Contact</a>
+  <!-- Second Main Section -->
+  <section class="main-section" id="section-two">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>dIGITAL PRINTS</h2>
+        <p>This is the description for the second section. It provides more details or another topic related to the site.</p>
       </div>
-      <div class="social-media">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      </div>
+      <img src="https://via.placeholder.com/600x400" alt="Image 2" class="section-image">
     </div>
-  </footer>
+  </section>
+</div>
+</main>
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2024 Patil Brothers. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="social-media">
+      <a href="https://www.facebook.com/p/Mc_creative_01-100063970238422/?_rdr" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/mc_creative_01/?hl=en" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>      
+    </div>
+  </div>
+</footer>
 
-  <script>
-    // Get references to the search input and product cards
-    const searchInput = document.querySelector('.search-input');
-    const productCards = document.querySelectorAll('.product-card');
+<script>
+  const searchInput = document.querySelector('.search-input');
+  const productCards = document.querySelectorAll('.product-card');
 
-    // Add an event listener for the 'input' event to the search field
-    searchInput.addEventListener('input', function() {
-      // Get the current search query (case-insensitive)
-      const query = searchInput.value.toLowerCase();
-
-      // Loop through each product card and check if it matches the query
-      productCards.forEach(function(card) {
-        const productName = card.querySelector('h4') ? card.querySelector('h4').textContent.toLowerCase() : '';
-        // If the product name contains the query, display it; otherwise, hide it
-        if (productName.includes(query)) {
-          card.style.display = 'block'; // Show the product card
-        } else {
-          card.style.display = 'none'; // Hide the product card
-        }
-      });
+  searchInput.addEventListener('input', function() {
+    const query = searchInput.value.toLowerCase();
+    productCards.forEach(function(card) {
+      const productName = card.querySelector('h4').textContent.toLowerCase();
+      if (productName.includes(query)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
     });
-  </script>
+  });
+</script>
 
 </body>
 </html>
